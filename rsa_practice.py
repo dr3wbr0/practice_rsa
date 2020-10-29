@@ -7,15 +7,15 @@ This is a custom python module made to demonstrate the math behind basic RSA imp
 4. Use decrypt_msg(private_key, cypher_text) with keypair[1] (second tuple from keypair) and encrypted message
 
 Example:
-    > keypair = gen_keypair(929, 19697)
-    > print(my_keypair)
+    >> keypair = gen_keypair(929, 19697)
+    >> print(my_keypair)
     [(18298513, 345669), (18298513, 1100397)]
-    > pubkey, privkey = keypair[0], keypair[1]
-    > cypher_text = encrypt_msg(pub_key, 'dog')
-    > print(cypher_text)
+    >> pubkey, privkey = keypair[0], keypair[1]
+    >> cypher_text = encrypt_msg(pub_key, 'dog')
+    >> print(cypher_text)
     15864656
-    > message = decrypt_msg(privkey, cypher_text)
-    > print(message)
+    >> message = decrypt_msg(privkey, cypher_text)
+    >> print(message)
     dog
 """
 
@@ -36,7 +36,7 @@ def int_to_str(b):
 
 
 def gcd(a, b) -> int:
-    """Greatest common denominator for a and b."""
+    """Greatest common denominator for a and b"""
     while b != 0:
         t = b
         b = a % b
@@ -45,7 +45,7 @@ def gcd(a, b) -> int:
 
 
 def lcm(a, b) -> int:
-    """Least common multiple for a and b."""
+    """Least common multiple for a and b"""
     return int(abs(a*b)/gcd(a, b))
 
 
@@ -98,7 +98,7 @@ def gen_primes(a, b):
 
 def mmi(e, ctf) -> int:
     """Modular multiplicative inverse for coprime e and
-       Carmichael's totient function value."""
+       Carmichael's totient function value"""
     i = 1
     while (ctf * i + 1) % e != 0:
         i += 1
