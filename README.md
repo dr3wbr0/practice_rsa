@@ -6,7 +6,7 @@
 3. Use encrypt_msg(public_key, message) with keypair[0] and any three character string (bit size is limited)
 4. Use decrypt_msg(private_key, cypher_text) with keypair[1] (second tuple from keypair) and encrypted message
 
-Example:
+#### Example:
 ```
     >>> keypair = gen_keypair(929, 19697)
     >>> print(my_keypair)
@@ -18,4 +18,4 @@ Example:
     >>> message = decrypt_msg(privkey, cypher_text)
     >>> print(message)
     dog
-    ```
+```
