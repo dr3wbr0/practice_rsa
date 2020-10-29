@@ -7,6 +7,7 @@
 4. Use decrypt_msg(private_key, cypher_text) with keypair[1] (second tuple from keypair) and encrypted message
 
 Example:
+```
     > keypair = gen_keypair(929, 19697)
     > print(my_keypair)
     [(18298513, 345669), (18298513, 1100397)]
@@ -17,3 +18,4 @@ Example:
     > message = decrypt_msg(privkey, cypher_text)
     > print(message)
     dog
+    ```
