@@ -1,5 +1,5 @@
 # Practice RSA manual implementation
-(This is for demonstration purposes **ONLY**. You should never roll your own crypto!)  
+(This is for demonstration purposes **ONLY**. You should never roll your own crypto!)
 ### This is a custom python module made to demonstrate the math behind basic RSA implementation. Here is how to use it:
 1. Choose 2 prime numbers. If needed use the gen_primes() function
 2. Use gen_keypair(p1, p2) with two primes (arguments) and assign the returned public/private keypair to a variable
