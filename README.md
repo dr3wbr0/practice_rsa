@@ -1,4 +1,4 @@
-# Drew's RSA practice implementation
+# Practice RSA manual implementation
 (This is for demonstration purposes *only*. You should never roll your own crypto!)
 ### This is a custom python module made to demonstrate the math behind basic RSA implementation. Here is how to use it:
 1. Choose 2 prime numbers. If needed use the gen_primes() function
